@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "install.packages(\"d3Network\")\nlibrary(d3Network)\nlibrary(RCurl)\n\nSource <- c(\"A\", \"A\", \"A\", \"A\", \"B\", \"B\", \"C\", \"C\", \"D\")\nTarget <- c(\"B\", \"C\", \"D\", \"J\", \"E\", \"F\", \"G\", \"H\", \"I\")\nNetworkData <- data.frame(Source, Target)\nNetworkData\nmyOpenHtml <- function(filename) {\n  if (Sys.info()[\"sysname\"]==\"windows\") {\n    shell.exec(filename)\n  } else {\n    system(paste(\"open\",filename)) # mac case\n  }\n}\n\nd3SimpleNetwork(NetworkData, width = 400, height = 250,file=\"test1.html\")\nmyOpenHtml(\"test1.html\")\n",
+    "created" : 1496817991637.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2022981448",
+    "id" : "D74D4D82",
+    "lastKnownWriteTime" : 1496758870,
+    "last_content_update" : 1496758870,
+    "path" : "~/Bigdata/R_workspace/PRJ_R/R_examples/02.visualization/d3.R",
+    "project_path" : "R_examples/02.visualization/d3.R",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

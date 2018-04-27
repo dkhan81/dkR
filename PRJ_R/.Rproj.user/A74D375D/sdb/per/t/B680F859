@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(MASS)\npainters\nhead(painters)\n?painters\npainters$School\nhelp(painters)\nstr(painters)\n\n#Frequency dist. of Quali data\nschool <- painters$School\nschool.freq <- table(school) \nschool.freq\n#(Enhanced solution) \ncbind(school.freq)\n\n\n#Relative Frequency Distribution of Qualitative Data\nschool.relfreq <- school.freq/nrow(painters) \nschool.relfreq\nold <- options(digits=1)\ncbind(school.relfreq)\noptions(digits=2)\noptions(old)\n\n#bar graph \nbarplot(school.freq) \n#진전된 솔루션 \ncolors <- c(\"red\",\"yellow\" ,\"green\" ,\"violet\" ,\"orange\" ,\"blue\" ,\"pink\" ,\"cyan\")\nbarplot(school.freq, col=colors)\n\n\npie(school.freq)\n#색상활용 \ncolors <- c(\"red\",\"yellow\" ,\"green\" ,\"violet\" ,\"orange\" ,\"blue\" ,\"pink\" ,\"cyan\")\npie(school.freq, col=colors) \n\n\n\n\n\nhead(faithful) \n?faithful\n\nduration <- faithful$eruptions\nrange(duration)\nbreaks <- seq(1.5, 5.5, by=0.5) \nbreaks \nduration.cut <- cut(duration, breaks, right=FALSE)  #closed on the left open on the right\nduration.freq <- table(duration.cut)  ; duration.freq\ncbind(duration.freq)\n\n\nhist(duration, right=FALSE)  # intervals closed on the left\nhist(duration, right=FALSE, col=colors, main=\"Old Faith Eruptions\", xlab=\"Duration minutes\")\n\n\nduration.freq\nduration.relfreq <- duration.freq/nrow(faithful)\nduration.relfreq\nold <- options(digits=1)\nduration.relfreq\ncbind(duration.freq, duration.relfreq)\noptions(old)\n?options\n\n#the cumulative frequency distribution\nduration.cumfreq <- cumsum(duration.freq) \ncbind(duration.cumfreq)\n\n\n\n\ncumfreq0 <- c(0, cumsum(duration.freq))\nplot(breaks, cumfreq0, main=\"Old Faithful Eruptions\", xlab=\"Duration minutes\", ylab=\"Cumulative eruptions\") \nlines(breaks, cumfreq0)\n\n\n\n\n#the cumulative Relative frequency\nduration.cumrelfreq <- duration.cumfreq/nrow(faithful)\nduration.cumrelfreq\nold <- options(digits=2)\nduration.cumrelfreq\noptions(old)\ncbind(duration.cumfreq, duration.cumrelfreq)\n\n\n\n\n\n#graph \nduration.cumrelfreq0 <- duration.cumfreq/nrow(faithful)\ncumrelfreq0 <- c(0, duration.cumrelfreq)\nplot(breaks, cumrelfreq0, main=\"Old Faithful eruptions\", xlab=\"Duration minutes\", ylab=\"Cumulrative eruption proportion\")\nlines(breaks, cumrelfreq0) \n\n\n#Fn <- ecdf(duration) \n#plot(Fn, \"Old Faithful Eruptions\", xlab=\"Duration minutes\", ylab=\"Cumulrative eruption proportion\")\n\n#stem-and-leaf \nstem(duration) \n\n#scatter-plot\nduration \nwaiting <- faithful$waiting\nhead(cbind(duration, waiting))\n\nplot(duration, waiting, xlab=\"Eruption duration\", ylab=\"Time waited\")\n\nabline(lm(waiting~duration))\n\n              \n",
+    "created" : 1496814549867.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "529620016",
+    "id" : "B680F859",
+    "lastKnownWriteTime" : 1496827262,
+    "last_content_update" : 1496827262503,
+    "path" : "~/Bigdata/R_workspace/PRJ_R/R_examples/02.visualization/r_basic.R",
+    "project_path" : "R_examples/02.visualization/r_basic.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

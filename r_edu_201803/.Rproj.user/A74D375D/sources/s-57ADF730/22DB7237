@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1522202398486.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "22DB7237",
+    "lastKnownWriteTime" : 1522627018,
+    "last_content_update" : 1522627019079,
+    "path" : "~/Bigdata/R_workspace/r_edu_201803/ch_1.R",
+    "project_path" : "ch_1.R",
+    "properties" : {
+        "cursorPosition" : "16,7",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

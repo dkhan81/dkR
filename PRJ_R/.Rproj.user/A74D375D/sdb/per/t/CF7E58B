@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "weight <- c(94,83,80,67,73,69)\nweight\nheight <- c(1.73,1.82,1.70,1.69,1.84,1.77)\nheight\nBMI <- weight / height^2\nmean(weight)    #평균\nvar(weight)        #분산\nsd(weight)         #표준편차\n\nt.test(BMI, mu=22.5)\nresult <- t.test(BMI, mu=22.5)\nresult$p.value    #특정변수의 이름만 가져올 수 있음\n\n\n\n#시각화\nplot(height, weight, pch=3)\nx <- sort(height)\nlines(x, 22.5*x^2)\nheight \nx \n\nresult\n",
+    "created" : 1496821657105.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "152303470",
+    "id" : "CF7E58B",
+    "lastKnownWriteTime" : 1494918682,
+    "last_content_update" : 1494918682,
+    "path" : "~/Bigdata/R_workspace/PRJ_R/R_examples/03.basic_stat/BMI.R",
+    "project_path" : "R_examples/03.basic_stat/BMI.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

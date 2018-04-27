@@ -1,0 +1,15 @@
+]0;~/Bigdata/R_workspace/PRJ_R[?1034hSKP1003849MN002:PRJ_R 1003849$ test
+]0;~/Bigdata/R_workspace/PRJ_RSKP1003849MN002:PRJ_R 1003849$ 1
+bash: 1: command not found
+]0;~/Bigdata/R_workspace/PRJ_RSKP1003849MN002:PRJ_R 1003849$ ll
+total 64
+drwxr-xr-x  9 1003849  staff    288 Mar 28 10:39 .
+drwxr-xr-x  5 1003849  staff    160 Mar 28 10:56 ..
+-rw-r--r--@ 1 1003849  staff   6148 Jun  7  2017 .DS_Store
+-rw-r--r--  1 1003849  staff   3716 Jun  7  2017 .RData
+-rw-r--r--  1 1003849  staff  11703 Jun  7  2017 .Rhistory
+drwxr-xr-x  4 1003849  staff    128 Jun  7  2017 .Rproj.user
+-rw-r--r--  1 1003849  staff    205 Mar 28 10:39 PRJ_R.Rproj
+drwx------@ 9 1003849  staff    288 Jun  7  2017 R_examples
+-rw-r--r--  1 1003849  staff   2988 Jun  7  2017 test1.html
+]0;~/Bigdata/R_workspace/PRJ_RSKP1003849MN002:PRJ_R 1003849$ 

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "install.packages(\"ggplot2\")\nlibrary(ggplot2)\n\np <- ggplot(mtcars, aes(wt, mpg))\np + geom_point()\n\n# Add aesthetic mappings\np + geom_point(aes(colour = factor(cyl)))\n\np + geom_point(aes(shape = factor(cyl)))\n\np + geom_point(aes(size = qsec))\n\n# Change scales\np + geom_point(aes(colour = cyl)) + scale_colour_gradient(low = \"blue\")\n\np + geom_point(aes(shape = factor(cyl))) + scale_shape(solid = FALSE)\n\n# Set aesthetics to fixed value\nggplot(mtcars, aes(wt, mpg)) + geom_point(colour = \"red\", size = 3)\n\n# You can create interesting shapes by layering multiple points of\n# different sizes\np <- ggplot(mtcars, aes(mpg, wt, shape = factor(cyl)))\np + geom_point(aes(colour = factor(cyl)), size = 4) +\n  geom_point(colour = \"grey90\", size = 1.5)\n\n#####################################################\ninstall.packages(\"Lock5Data\")\nlibrary(Lock5Data)\ndata(SleepStudy)\nnames(SleepStudy)\n?SleepStudy\n\nggplot(SleepStudy, aes(x=Drinks))+geom_bar()\nggplot(SleepStudy, aes(x=Drinks))+geom_bar(fill=\"#FF9999\", colour=\"black\")\nggplot(SleepStudy, aes(x=Drinks))+geom_histogram(binwidth=2,aes(y=..density..)) # ..은 계산된 수치 \nggplot(SleepStudy, aes(x=Drinks))+geom_histogram(binwidth=1)\n\nggplot(SleepStudy, aes(x=ClassYear,y=Drinks))+geom_boxplot()\n\nstr(SleepStudy)\nggplot(SleepStudy, aes(x=factor(ClassYear),y=Drinks))+geom_boxplot()\nggplot(SleepStudy, aes(x=factor(ClassYear),y=Drinks))+geom_boxplot()+coord_flip() #Flipped cartesian coordinates 뒤집혀진 직교좌표\n\nggplot(SleepStudy, aes(x=Drinks))+geom_density()\n\n",
+    "created" : 1496817471549.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "401200679",
+    "id" : "69D3B10",
+    "lastKnownWriteTime" : 1496759158,
+    "last_content_update" : 1496759158,
+    "path" : "~/Bigdata/R_workspace/PRJ_R/R_examples/02.visualization/ggplot2.R",
+    "project_path" : "R_examples/02.visualization/ggplot2.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

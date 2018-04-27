@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\nmtcars\n?mtcars\n\nmodel <- lm(am~., data=mtcars)\n\n\nstep(model, direction=\"forward\")\nstep(model, direction=\"backward\")\nstep(model, direction=\"both\")\n",
+    "created" : 1496825119622.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "376716318",
+    "id" : "750AE633",
+    "lastKnownWriteTime" : 1496827262,
+    "last_content_update" : 1496827262541,
+    "path" : "~/Bigdata/R_workspace/PRJ_R/R_examples/03.basic_stat/regression_step.R",
+    "project_path" : "R_examples/03.basic_stat/regression_step.R",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

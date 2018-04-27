@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#단순회귀분석 \n\nx=c(4,6,6,8,8,9,9,10,12,12)\ny=c(39,42,45,47,50,50,52,55,57,60)\nlm(y~x)\n\nlm.result=lm(y~x)\nsummary(lm.result)\n\n#회귀모형의 정도 \nplot(x,y)\nabline(lm.result)\nresid(lm.result)\n\nfitted(lm.result)\n\npredict(lm.result, data.frame(x=c(7,15,20)))\n\npar(mfrow=c(2,2))\nplot(lm.result)\n",
+    "created" : 1496825141065.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3692873611",
+    "id" : "3425B111",
+    "lastKnownWriteTime" : 1496637188,
+    "last_content_update" : 1496637188,
+    "path" : "~/Bigdata/R_workspace/PRJ_R/R_examples/03.basic_stat/simple_linear_regression.R",
+    "project_path" : "R_examples/03.basic_stat/simple_linear_regression.R",
+    "properties" : {
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
