@@ -46,3 +46,20 @@ head(X_train)
 X_test <- fastDiscretization(dataSet = X_test, bins = list(age = c(0, 18, 25, 45, 62, +Inf)))
 print(table(X_train$age))
 
+# 5. Encoding categorical
+# col에  특정 컬럼만 지정 가능
+encoding <- build_encoding(dataSet = X_train, cols = "auto", verbose = TRUE)
+X_train <- one_hot_encoder(dataSet = X_train, encoding = encoding, drop = TRUE, verbose = TRUE)
+X_test <- one_hot_encoder(dataSet = X_test, encoding = encoding, drop = TRUE, verbose = TRUE)
+head(X_train)
+print("Dimensions of X_train: ")
+print(dim(X_train))
+print(dim(X_test))
+
+# 6. Filtering variables
+bijections <- whichAreBijection(dataSet = X_train, verbose = TRUE)
+X_train$Male = NULL
+X_test$Male = NULL
+head(X_train)
+
+X_test <- sameShape(X_test, referenceSet = X_test, verbose = TRUE)
